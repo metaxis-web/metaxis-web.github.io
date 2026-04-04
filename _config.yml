@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Una voz en el metaxis
 twitter_username: username
 github_username: username
-minimal_mistakes_skin: contrast
+minimal_mistakes_skin: dark #contrast
 search: true
 
 # Build settings
