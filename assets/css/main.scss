@@ -1,4 +1,11 @@
+---
+# solo estas tres líneas arriba son OBLIGATORIAS
+---
+
+@import "minimal-mistakes";
+
+/* tu override */
 .page__hero--overlay {
-  min-height: 400px;
+  min-height: 500px !important;
   background-position: center !important;
 }
