@@ -11,6 +11,17 @@
   background-position: center;
 }
 
+/* título del hero (el gris de arriba) */
+.page__hero-title {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.page__hero-title:hover {
+  color: #4da3ff;
+  cursor: default;
+}
+
 /* =========================
    DARK MODE BASE
 ========================= */
@@ -28,6 +39,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
+/* título del post (por si acaso) */
+.page__title {
+  color: #ffffff !important;
+}
+
 .archive__item-excerpt,
 .page__meta {
   color: #a0a8b0;
@@ -40,6 +56,7 @@ a,
 .archive__item-title a {
   color: #4da3ff;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover,
@@ -48,22 +65,26 @@ a:hover,
 }
 
 /* =========================
-   NAVBAR (FIX COMPLETO)
+   NAVBAR (FIX TOTAL)
 ========================= */
 .masthead,
-.masthead__inner-wrap {
-  background-color: #0b0f14 !important;
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,
+.greedy-nav .visible-links {
+  background: #0b0f14 !important;
   border-bottom: 1px solid #1a1f26;
 }
 
-.masthead a {
+.masthead a,
+.greedy-nav a {
   color: #e6e6e6 !important;
 }
 
-.masthead a:hover {
+.masthead a:hover,
+.greedy-nav a:hover {
   color: #ffffff !important;
 }
-
 
 /* =========================
    DIVISORES
@@ -73,37 +94,20 @@ hr {
 }
 
 /* =========================
+   POSTS / LISTAS
+========================= */
+.archive__item-title a {
+  color: #4da3ff;
+}
+
+.archive__item-title a:hover {
+  color: #82c0ff;
+}
+
+/* =========================
    FOOTER
 ========================= */
 .page__footer {
   background-color: #0b0f14;
   color: #a0a8b0;
-}
-
-/* NAVBAR FIX TOTAL */
-.greedy-nav {
-  background-color: #0b0f14 !important;
-}
-
-.greedy-nav .visible-links {
-  background-color: #0b0f14 !important;
-}
-
-.greedy-nav a {
-  color: #e6e6e6 !important;
-}
-
-.greedy-nav a:hover {
-  color: #ffffff !important;
-}
-
-/* quitar fondo blanco del contenedor */
-.masthead,
-.masthead__inner-wrap,
-.masthead__menu {
-  background: #0b0f14 !important;
-}
-
-.page__title {
-  color: #ffffff !important;
 }
