@@ -4,7 +4,7 @@
 @import "minimal-mistakes";
 
 /* =========================
-   HERO (banner principal)
+   HERO
 ========================= */
 .page__hero--overlay {
   min-height: 500px;
@@ -14,15 +14,11 @@
 /* =========================
    DARK MODE BASE
 ========================= */
-body {
-  background-color: #0b0f14;
-  color: #e6e6e6;
-}
-
-/* fondo general */
+body,
 .page,
 .initial-content {
   background-color: #0b0f14;
+  color: #e6e6e6;
 }
 
 /* =========================
@@ -32,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-/* texto secundario */
 .archive__item-excerpt,
 .page__meta {
   color: #a0a8b0;
@@ -41,36 +36,36 @@ h1, h2, h3, h4, h5, h6 {
 /* =========================
    LINKS
 ========================= */
-a {
+a,
+.archive__item-title a {
   color: #4da3ff;
   text-decoration: none;
 }
 
-a:hover {
-  color: #82c0ff;
-}
-
-/* =========================
-   NAVBAR
-========================= */
-.masthead {
-  background-color: #0b0f14;
-  border-bottom: 1px solid #1a1f26;
-}
-
-/* =========================
-   POSTS / LISTAS
-========================= */
-.archive__item-title a {
-  color: #4da3ff;
-}
-
+a:hover,
 .archive__item-title a:hover {
   color: #82c0ff;
 }
 
 /* =========================
-   LÍNEAS / DIVISORES
+   NAVBAR (FIX COMPLETO)
+========================= */
+.masthead,
+.masthead__inner-wrap {
+  background-color: #0b0f14 !important;
+  border-bottom: 1px solid #1a1f26;
+}
+
+.masthead a {
+  color: #e6e6e6 !important;
+}
+
+.masthead a:hover {
+  color: #ffffff !important;
+}
+
+/* =========================
+   DIVISORES
 ========================= */
 hr {
   border-color: #1a1f26;
@@ -82,20 +77,4 @@ hr {
 .page__footer {
   background-color: #0b0f14;
   color: #a0a8b0;
-}
-
-.masthead {
-  background-color: #0b0f14 !important;
-}
-
-.masthead__inner-wrap {
-  background-color: #0b0f14 !important;
-}
-
-.masthead a {
-  color: #e6e6e6 !important;
-}
-
-.masthead a:hover {
-  color: #ffffff !important;
 }
