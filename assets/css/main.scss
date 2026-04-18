@@ -47,6 +47,39 @@ a:hover,
   color: #82c0ff;
 }
 
+/* =========================
+   NAVBAR (FIX COMPLETO)
+========================= */
+.masthead,
+.masthead__inner-wrap {
+  background-color: #0b0f14 !important;
+  border-bottom: 1px solid #1a1f26;
+}
+
+.masthead a {
+  color: #e6e6e6 !important;
+}
+
+.masthead a:hover {
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   DIVISORES
+========================= */
+hr {
+  border-color: #1a1f26;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.page__footer {
+  background-color: #0b0f14;
+  color: #a0a8b0;
+}
+
 /* NAVBAR FIX TOTAL */
 .greedy-nav {
   background-color: #0b0f14 !important;
@@ -69,19 +102,4 @@ a:hover,
 .masthead__inner-wrap,
 .masthead__menu {
   background: #0b0f14 !important;
-}
-
-/* =========================
-   DIVISORES
-========================= */
-hr {
-  border-color: #1a1f26;
-}
-
-/* =========================
-   FOOTER
-========================= */
-.page__footer {
-  background-color: #0b0f14;
-  color: #a0a8b0;
 }
