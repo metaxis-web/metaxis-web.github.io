@@ -11,7 +11,7 @@
   background-position: center;
 }
 
-/* título del hero (el gris de arriba) */
+/* título del hero */
 .page__hero-title {
   color: #ffffff !important;
   transition: color 0.3s ease;
@@ -19,7 +19,6 @@
 
 .page__hero-title:hover {
   color: #4da3ff;
-  cursor: default;
 }
 
 /* =========================
@@ -39,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-/* título del post (por si acaso) */
 .page__title {
   color: #ffffff !important;
 }
@@ -64,8 +62,18 @@ a:hover,
   color: #82c0ff;
 }
 
+/* quitar azul feo del título del post */
+.page__title a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.page__title a:hover {
+  color: #9fb3c8 !important;
+}
+
 /* =========================
-   NAVBAR (FIX TOTAL)
+   NAVBAR
 ========================= */
 .masthead,
 .masthead__inner-wrap,
@@ -94,17 +102,6 @@ hr {
 }
 
 /* =========================
-   POSTS / LISTAS
-========================= */
-.archive__item-title a {
-  color: #4da3ff;
-}
-
-.archive__item-title a:hover {
-  color: #82c0ff;
-}
-
-/* =========================
    FOOTER
 ========================= */
 .page__footer {
@@ -112,43 +109,42 @@ hr {
   color: #a0a8b0;
 }
 
-
 /* =========================
-   FIX TÍTULO POST
+ LAYOUT ANCHO REAL
 ========================= */
-.page__title a {
-  color: #ffffff !important;
-  text-decoration: none;
+
+/* eliminar grid y sidebar del theme */
+.layout--single {
+  display: block !important;
 }
 
-.page__title a:hover {
-  color: #ffffff !important; /* o el color que quieras */
+.layout--single .sidebar {
+  display: none !important;
 }
 
-
-/* =========================
-   ANCHO DE CONTENIDO
-========================= */
-.page__inner-wrap {
-  max-width: 1100px; 
+/* contenedor principal ancho */
+.layout--single .page {
+  width: 90% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
+/* contenido interno */
+.layout--single .page__content {
+  width: 100% !important;
+  max-width: 1200px !important;
+}
+
+/* imágenes grandes */
 .page__content img {
   width: 100%;
   max-width: 100%;
 }
 
 /* =========================
-   ANCHO REAL DEL CONTENIDO
+   LEGIBILIDAD
 ========================= */
-.layout--single .page {
-  max-width: 1100px;
-}
-
-.layout--single .page__content {
-  max-width: 1100px;
-}
-
-.layout--single .page__inner-wrap {
-  max-width: 1100px;
+.page__content {
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
