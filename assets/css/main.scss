@@ -111,3 +111,16 @@ hr {
   background-color: #0b0f14;
   color: #a0a8b0;
 }
+
+
+/* =========================
+   FIX TÍTULO POST
+========================= */
+.page__title a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.page__title a:hover {
+  color: #ffffff !important; /* o el color que quieras */
+}
