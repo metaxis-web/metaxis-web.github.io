@@ -157,3 +157,13 @@ hr {
 h1, h2, h3 {
   font-family: sans-serif;
 }
+
+/* =========================
+   TIPOGRAFÍA MONOSPACE AJUSTADA
+========================= */
+.page__content {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  letter-spacing: -0.2px;
+}
