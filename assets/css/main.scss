@@ -124,3 +124,17 @@ hr {
 .page__title a:hover {
   color: #ffffff !important; /* o el color que quieras */
 }
+
+
+/* =========================
+   ANCHO DE CONTENIDO
+========================= */
+.page__inner-wrap {
+  max-width: 1100px; 
+}
+
+.page__content img {
+  width: 100%;
+  max-width: 100%;
+}
+
